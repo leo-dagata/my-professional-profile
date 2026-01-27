@@ -3,78 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Profile</title>
+    <meta name="description" content="Professional profile of a bioinformatician with over 10 years of experience">
+    <meta name="keywords" content="bioinformatics, computational biology, data analysis">
+    <title>Professional Profile - Bioinformatician</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#description">Short Description</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Professional Profile</div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h1>Welcome to My Professional Profile</h1>
-            <p>This is a brief overview of my professional journey as a bioinformatician.</p>
-            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Bioinformatician</h1>
+                    <p class="hero-subtitle">Transforming biological data into actionable insights</p>
+                    <p class="hero-description">Over 10 years of experience in computational biology and bioinformatics</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="#experience" class="btn btn-secondary">View Experience</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+                </div>
+            </div>
         </section>
-        <section id="description">
-            <h2>Short Description</h2>
-            <p>I am a dedicated bioinformatician with over ten years of experience in the field. Currently, I am working at Amaris Consulting, where I provide expert bioinformatics solutions to our clients.</p>
+        
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-content">
+                    <p>I am a dedicated bioinformatician with over ten years of experience in the field. Currently, I am working at Amaris Consulting, where I provide expert bioinformatics solutions to our clients.</p>
+                    <p>My expertise lies in developing bioinformatics pipelines, analyzing genomic data, and collaborating with cross-functional teams to advance drug discovery and research projects.</p>
+                </div>
+            </div>
         </section>
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Ph.D. in Bioinformatics</strong> - University of XYZ, 2013</li>
-                <li><strong>M.Sc. in Computational Biology</strong> - University of ABC, 2010</li>
-                <li><strong>B.Sc. in Biology</strong> - University of DEF, 2008</li>
-            </ul>
+
+        <section id="skills" class="section section-alt">
+            <div class="section-container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">Perl</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Bash</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Bioinformatics Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">BioConductor</span>
+                            <span class="skill-tag">BLAST</span>
+                            <span class="skill-tag">Galaxy</span>
+                            <span class="skill-tag">Nextflow</span>
+                            <span class="skill-tag">Snakemake</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Analysis</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Genomics</span>
+                            <span class="skill-tag">RNA-Seq</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Statistical Analysis</span>
+                            <span class="skill-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">HPC</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <ul>
-                <li>
-                    <strong>Senior Bioinformatician</strong> - Amaris Consulting, 2018 - Present
-                    <img src="images/amaris-logo.png" alt="Amaris Logo" class="company-logo">
-                    <p>Contributions: Developed bioinformatics pipelines, managed projects for pharmaceutical clients, and published several papers on bioinformatics methodologies.</p>
-                    <ul>
-                        <li><a href="https://link-to-publication1.com" target="_blank">Publication 1</a></li>
-                        <li><a href="https://link-to-publication2.com" target="_blank">Publication 2</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Bioinformatics Specialist</strong> - GSK, 2015 - 2018
-                    <img src="images/gsk-logo.png" alt="GSK Logo" class="company-logo">
-                    <p>Contributions: Implemented bioinformatics tools, analyzed genomic data, and collaborated with cross-functional teams on drug discovery projects.</p>
-                    <ul>
-                        <li><a href="https://link-to-publication3.com" target="_blank">Publication 3</a></li>
-                        <li><a href="https://link-to-publication4.com" target="_blank">Publication 4</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Junior Bioinformatician</strong> - BioTech Corp, 2013 - 2015
-                    <img src="images/biotech-logo.png" alt="BioTech Logo" class="company-logo">
-                    <p>Contributions: Assisted in research projects, maintained databases, and supported senior bioinformaticians in data analysis tasks.</p>
-                </li>
-            </ul>
+        <section id="education" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Ph.D. in Bioinformatics</h3>
+                            <p class="institution">University of XYZ</p>
+                            <p class="year">2013</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>M.Sc. in Computational Biology</h3>
+                            <p class="institution">University of ABC</p>
+                            <p class="year">2010</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>B.Sc. in Biology</h3>
+                            <p class="institution">University of DEF</p>
+                            <p class="year">2008</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="hobbies">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Chess</li>
-                <li>Coding side projects</li>
-                <li>Reading science fiction</li>
-                <li>Outdoor activities with family</li>
-            </ul>
+        <section id="experience" class="section section-alt">
+            <div class="section-container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Senior Bioinformatician</h3>
+                                <p class="company">Amaris Consulting</p>
+                            </div>
+                            <div class="experience-duration">
+                                <span class="duration">2018 - Present</span>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <p>Developed bioinformatics pipelines, managed projects for pharmaceutical clients, and published several papers on bioinformatics methodologies.</p>
+                            <div class="publications">
+                                <h4>Key Publications:</h4>
+                                <ul>
+                                    <li><a href="https://link-to-publication1.com" target="_blank" rel="noopener">Publication 1</a></li>
+                                    <li><a href="https://link-to-publication2.com" target="_blank" rel="noopener">Publication 2</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Bioinformatics Specialist</h3>
+                                <p class="company">GSK</p>
+                            </div>
+                            <div class="experience-duration">
+                                <span class="duration">2015 - 2018</span>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <p>Implemented bioinformatics tools, analyzed genomic data, and collaborated with cross-functional teams on drug discovery projects.</p>
+                            <div class="publications">
+                                <h4>Key Publications:</h4>
+                                <ul>
+                                    <li><a href="https://link-to-publication3.com" target="_blank" rel="noopener">Publication 3</a></li>
+                                    <li><a href="https://link-to-publication4.com" target="_blank" rel="noopener">Publication 4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Junior Bioinformatician</h3>
+                                <p class="company">BioTech Corp</p>
+                            </div>
+                            <div class="experience-duration">
+                                <span class="duration">2013 - 2015</span>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <p>Assisted in research projects, maintained databases, and supported senior bioinformaticians in data analysis tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hobbies" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Hobbies & Interests</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">♟️</div>
+                        <h3>Chess</h3>
+                        <p>Strategic thinking and problem-solving</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">💻</div>
+                        <h3>Coding Projects</h3>
+                        <p>Developing side projects and learning new technologies</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">📚</div>
+                        <h3>Science Fiction</h3>
+                        <p>Exploring futuristic concepts and ideas</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🏞️</div>
+                        <h3>Outdoor Activities</h3>
+                        <p>Spending quality time with family in nature</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-alt">
+            <div class="section-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-intro">Interested in collaboration or have a project in mind? Feel free to reach out!</p>
+                    <div class="contact-links">
+                        <a href="mailto:contact@example.com" class="contact-link">
+                            <span class="contact-icon">📧</span>
+                            <span>contact@example.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank" rel="noopener">
+                            <span class="contact-icon">💼</span>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/yourprofile" class="contact-link" target="_blank" rel="noopener">
+                            <span class="contact-icon">🐙</span>
+                            <span>GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Professional Profile. All rights reserved.</p>
+            <p class="footer-subtitle">Bioinformatics • Computational Biology • Data Science</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
