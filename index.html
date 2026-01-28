@@ -3,97 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Léo d'Agata - Bioinformatician with strong expertise in NGS data, microbiome analysis, and oncology variant research">
+    <meta name="keywords" content="bioinformatics, biostatistics, genomics, NGS, microbiome, oncology">
     <title>Léo d'Agata - Bioinformatician</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#education-experience">Education & Experience</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Léo d'Agata</div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h1>Léo d'Agata - Bioinformatician</h1>
-            <p>Currently based in Montreal, Quebec, I am a bioinformatics engineer with strong technical expertise and significant experience in biostatistics, genomics, and bioinformatics across various settings from academic research to the pharmaceutical and cosmetic industry. My career has included key roles at Life & Soft, INRA, and collaborations with prestigious institutions like GSK, CEA and L'Oréal, where I developed a deep understanding of next-generation sequencing (NGS) data, microbiome analysis, and oncology variant research.</p>
-            <p>Passionate about using bioinformatics to solve complex problems and drive innovation in health and biology, my team collaboration, communication, and project management skills, combined with my technical expertise, enable me to successfully lead significant projects and work effectively in multidisciplinary teams.</p>
-            <p>I am open to exploring new opportunities and collaborating on projects that could benefit from my expertise.</p>
-            <p>Feel free to contact me if you wish to discuss how I can contribute to your project.</p>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Léo d'Agata - Bioinformatician</h1>
+                    <p class="hero-subtitle">Transforming biological data into actionable insights</p>
+                    <p class="hero-description">Based in Montreal, Quebec • NGS • Microbiome Analysis • Oncology Variant Research</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="#experience" class="btn btn-secondary">View Experience</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+                </div>
+            </div>
         </section>
-
-        <section id="education-experience" style="display: none;">
-            <h2>Education & Experience</h2>
-            <h3>Education</h3>
-            <ul>
-                <li><strong>Master’s Degree in Bioinformatics and Biostatistics</strong>, Université de Nantes, 2012-2014</li>
-                <li><strong>Bachelor’s Degree in Biology</strong>, Université de Nantes, 2009-2012</li>
-            </ul>
-
-            <h3>Experience</h3>
-            <ul>
-                <li>
-                    <strong>NGS Data Scientist (Through Amaris consulting) at GSK</strong>, November 2023 - Present
-                    <p>Responsibilities: Support the bioinformatic deployment of NGS technology for investigation and QC testing of commercial products, facilitate the analysis of massive high-throughput sequencing data for Vaccines QC.</p>
-                </li>
-                <li>
-                    <strong>Bioinformatics/Biostatistics Engineer at Life & Soft</strong>, October 2018 - August 2023
-                    <p>Responsibilities: Consultant for statistical analysis of skin microbiome (16S, 18S, ITS) in the cosmetics industry, bioinformatics services for the pharmaceutical industry, development of oncology variant search pipeline, RNAseq and microbiome data analysis.</p>
-                    <p>Publications: <a href="https://doi.org/10.3389/fimmu.2022.841723" target="_blank">Frontiers in Immunology (2022)</a></p>
-                </li>
-                <li>
-                    <strong>Bioinformatics Engineer at INRAE – Genoscope</strong>, October 2014 - September 2018
-                    <p>Responsibilities: Research & Development in Bioinformatics, management of genomic sequencing projects, automation of sequence processing, evaluation of new methodologies for large genome assemblies.</p>
-                    <p>Publications: <a href="http://www.ncbi.nlm.nih.gov/pubmed/26936254" target="_blank">NCBI (2016)</a>, <a href="https://doi.org/10.1016/j.xgen.2022.100123" target="_blank">Genomics (2022)</a></p>
-                </li>
-            </ul>
-        </section>
-
-        <section id="services" style="display: none;">
-            <h2>Services</h2>
-            <div class="service-tabs">
-                <ul class="tabs">
-                    <li class="tab-link current" data-tab="tab-1">Bulk RNAseq Analysis</li>
-                    <li class="tab-link" data-tab="tab-2">Human Germline Variant Calling</li>
-                    <li class="tab-link" data-tab="tab-3">Human Somatic Variant Calling</li>
-                    <li class="tab-link" data-tab="tab-4">Metabarcoding (16S/18S/ITS)</li>
-                    <li class="tab-link" data-tab="tab-5">Whole Metagenome Sequencing (WMS)</li>
-                </ul>
-
-                <div id="tab-1" class="tab-content current">
-                    <h3>Bulk RNAseq Analysis</h3>
-                    <p>Description of Bulk RNAseq Analysis services...</p>
-                </div>
-                <div id="tab-2" class="tab-content">
-                    <h3>Human Germline Variant Calling</h3>
-                    <p>Description of Human Germline Variant Calling services...</p>
-                </div>
-                <div id="tab-3" class="tab-content">
-                    <h3>Human Somatic Variant Calling</h3>
-                    <p>Description of Human Somatic Variant Calling services...</p>
-                </div>
-                <div id="tab-4" class="tab-content">
-                    <h3>Metabarcoding (16S/18S/ITS)</h3>
-                    <p>Description of Metabarcoding services...</p>
-                </div>
-                <div id="tab-5" class="tab-content">
-                    <h3>Whole Metagenome Sequencing (WMS)</h3>
-                    <p>Description of WMS services...</p>
+        
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-content">
+                    <p>Currently based in Montreal, Quebec, I am a bioinformatics engineer with strong technical expertise and significant experience in biostatistics, genomics, and bioinformatics across various settings from academic research to the pharmaceutical and cosmetic industry.</p>
+                    <p>My career has included key roles at Life & Soft, INRA, and collaborations with prestigious institutions like GSK, CEA and L'Oréal, where I developed a deep understanding of next-generation sequencing (NGS) data, microbiome analysis, and oncology variant research.</p>
+                    <p>Passionate about using bioinformatics to solve complex problems and drive innovation in health and biology, my team collaboration, communication, and project management skills, combined with my technical expertise, enable me to successfully lead significant projects and work effectively in multidisciplinary teams.</p>
+                    <p>I am open to exploring new opportunities and collaborating on projects that could benefit from my expertise. Feel free to contact me if you wish to discuss how I can contribute to your project.</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" style="display: none;">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:leo.dagata@gmail.com">leo.dagata@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/léo-d-agata-8ba6a3a0" target="_blank">Léo d'Agata</a></p>
+        <section id="skills" class="section section-alt">
+            <div class="section-container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">Perl</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Bash</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Bioinformatics Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">BioConductor</span>
+                            <span class="skill-tag">BLAST</span>
+                            <span class="skill-tag">Galaxy</span>
+                            <span class="skill-tag">Nextflow</span>
+                            <span class="skill-tag">Snakemake</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Analysis</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Genomics</span>
+                            <span class="skill-tag">RNA-Seq</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Statistical Analysis</span>
+                            <span class="skill-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">HPC</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Master's Degree in Bioinformatics and Biostatistics</h3>
+                            <p class="institution">Université de Nantes</p>
+                            <p class="year">2012 - 2014</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Bachelor's Degree in Biology</h3>
+                            <p class="institution">Université de Nantes</p>
+                            <p class="year">2009 - 2012</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="section section-alt">
+            <div class="section-container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3>NGS Data Scientist (Through Amaris Consulting)</h3>
+                                <p class="company">GSK</p>
+                            </div>
+                            <div class="experience-duration">
+                                <span class="duration">November 2023 - Present</span>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <p>Support the bioinformatic deployment of NGS technology for investigation and QC testing of commercial products. Facilitate the analysis of massive high-throughput sequencing data for Vaccines QC.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Bioinformatics/Biostatistics Engineer</h3>
+                                <p class="company">Life & Soft</p>
+                            </div>
+                            <div class="experience-duration">
+                                <span class="duration">October 2018 - August 2023</span>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <p>Consultant for statistical analysis of skin microbiome (16S, 18S, ITS) in the cosmetics industry. Bioinformatics services for the pharmaceutical industry. Development of oncology variant search pipeline. RNAseq and microbiome data analysis.</p>
+                            <div class="publications">
+                                <h4>Key Publications:</h4>
+                                <ul>
+                                    <li><a href="https://doi.org/10.3389/fimmu.2022.841723" target="_blank" rel="noopener">Frontiers in Immunology (2022)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Bioinformatics Engineer</h3>
+                                <p class="company">INRAE – Genoscope</p>
+                            </div>
+                            <div class="experience-duration">
+                                <span class="duration">October 2014 - September 2018</span>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <p>Research & Development in Bioinformatics. Management of genomic sequencing projects. Automation of sequence processing. Evaluation of new methodologies for large genome assemblies.</p>
+                            <div class="publications">
+                                <h4>Key Publications:</h4>
+                                <ul>
+                                    <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/26936254" target="_blank" rel="noopener">NCBI (2016)</a></li>
+                                    <li><a href="https://doi.org/10.1016/j.xgen.2022.100123" target="_blank" rel="noopener">Genomics (2022)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="hobbies" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Hobbies & Interests</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">♟️</div>
+                        <h3>Chess</h3>
+                        <p>Strategic thinking and problem-solving</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">💻</div>
+                        <h3>Coding Projects</h3>
+                        <p>Developing side projects and learning new technologies</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">📚</div>
+                        <h3>Science Fiction</h3>
+                        <p>Exploring futuristic concepts and ideas</p>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🏞️</div>
+                        <h3>Outdoor Activities</h3>
+                        <p>Spending quality time with family in nature</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-alt">
+            <div class="section-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-intro">Interested in collaboration or have a project in mind? Feel free to reach out!</p>
+                    <div class="contact-links">
+                        <a href="mailto:leo.dagata@gmail.com" class="contact-link">
+                            <span class="contact-icon">📧</span>
+                            <span>leo.dagata@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/léo-d-agata-8ba6a3a0" class="contact-link" target="_blank" rel="noopener">
+                            <span class="contact-icon">💼</span>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Léo d'Agata. All rights reserved.</p>
+            <p class="footer-subtitle">Bioinformatics • Biostatistics • NGS • Microbiome Analysis</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
