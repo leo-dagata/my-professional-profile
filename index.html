@@ -22,6 +22,7 @@
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#publications" class="nav-link">Publications</a></li>
                     <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -35,10 +36,11 @@
                 <div class="hero-text">
                     <h1 class="hero-title">Léo d'Agata - Bioinformatician</h1>
                     <p class="hero-subtitle">Transforming biological data into actionable insights</p>
-                    <p class="hero-description">Based in Montreal, Quebec • NGS • Microbiome Analysis • Oncology Variant Research</p>
+                    <p class="hero-description">Based in Aix-en-Provence, France • NGS • Microbiome Analysis • Oncology Variant Research</p>
                     <div class="cta-buttons">
                         <a href="#contact" class="btn btn-primary">Get in Touch</a>
                         <a href="#experience" class="btn btn-secondary">View Experience</a>
+                        <a href="sources/resume_Léo_d'Agata_2026.pdf" class="btn btn-outline" download>Download CV</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -51,7 +53,7 @@
             <div class="section-container">
                 <h2 class="section-title">About Me</h2>
                 <div class="section-content">
-                    <p>Currently based in Montreal, Quebec, I am a bioinformatics engineer with strong technical expertise and significant experience in biostatistics, genomics, and bioinformatics across various settings from academic research to the pharmaceutical and cosmetic industry.</p>
+                    <p>Currently based in Aix-en-Provence, France, I am a bioinformatics engineer with strong technical expertise and significant experience in biostatistics, genomics, and bioinformatics across various settings from academic research to the pharmaceutical and cosmetic industry.</p>
                     <p>My career has included key roles at Life & Soft, INRA, and collaborations with prestigious institutions like GSK, CEA and L'Oréal, where I developed a deep understanding of next-generation sequencing (NGS) data, microbiome analysis, and oncology variant research.</p>
                     <p>Passionate about using bioinformatics to solve complex problems and drive innovation in health and biology, my team collaboration, communication, and project management skills, combined with my technical expertise, enable me to successfully lead significant projects and work effectively in multidisciplinary teams.</p>
                     <p>I am open to exploring new opportunities and collaborating on projects that could benefit from my expertise. Feel free to contact me if you wish to discuss how I can contribute to your project.</p>
@@ -78,9 +80,20 @@
                         <div class="skill-tags">
                             <span class="skill-tag">BioConductor</span>
                             <span class="skill-tag">BLAST</span>
-                            <span class="skill-tag">Galaxy</span>
-                            <span class="skill-tag">Nextflow</span>
+                            <span class="skill-tag">Kraken2</span>
                             <span class="skill-tag">Snakemake</span>
+                            <span class="skill-tag">BWA/Bowtie</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Oncology & Variants</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GATK/Dragen</span>
+                            <span class="skill-tag">Mutect2</span>
+                            <span class="skill-tag">HaplotypeCaller</span>
+                            <span class="skill-tag">VarDict</span>
+                            <span class="skill-tag">Manta/Delly</span>
+                            <span class="skill-tag">CNVkit</span>
                         </div>
                     </div>
                     <div class="skill-category">
@@ -99,8 +112,9 @@
                             <span class="skill-tag">Docker</span>
                             <span class="skill-tag">Git</span>
                             <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">HPC</span>
+                            <span class="skill-tag">SLURM/HPC</span>
                             <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Conda</span>
                         </div>
                     </div>
                 </div>
@@ -151,6 +165,21 @@
                     <div class="experience-item">
                         <div class="experience-header">
                             <div>
+                                <h3>Biostatistics Engineer (Through Life & Soft)</h3>
+                                <p class="company">L'Oréal</p>
+                            </div>
+                            <div class="experience-duration">
+                                <span class="duration">October 2018 - January 2021</span>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <p>Statistical analysis consultant for skin microbiome analysis (16S, 18S, ITS) in the cosmetics industry. Collaboration on research projects analyzing the human skin microbiome.</p>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
                                 <h3>Bioinformatics/Biostatistics Engineer</h3>
                                 <p class="company">Life & Soft</p>
                             </div>
@@ -159,13 +188,7 @@
                             </div>
                         </div>
                         <div class="experience-content">
-                            <p>Consultant for statistical analysis of skin microbiome (16S, 18S, ITS) in the cosmetics industry. Bioinformatics services for the pharmaceutical industry. Development of oncology variant search pipeline. RNAseq and microbiome data analysis.</p>
-                            <div class="publications">
-                                <h4>Key Publications:</h4>
-                                <ul>
-                                    <li><a href="https://doi.org/10.3389/fimmu.2022.841723" target="_blank" rel="noopener">Frontiers in Immunology (2022)</a></li>
-                                </ul>
-                            </div>
+                            <p>Bioinformatics services for pharmaceutical industry and cosmetics (L'Oréal, CEA, Cerba HealthCare). Development of somatic and germline variant search pipeline in oncology. RNAseq and microbiome data analysis with Illumina/Nanopore technologies.</p>
                         </div>
                     </div>
                     
@@ -180,19 +203,46 @@
                             </div>
                         </div>
                         <div class="experience-content">
-                            <p>Research & Development in Bioinformatics. Management of genomic sequencing projects. Automation of sequence processing. Evaluation of new methodologies for large genome assemblies.</p>
-                            <div class="publications">
-                                <h4>Key Publications:</h4>
-                                <ul>
-                                    <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/26936254" target="_blank" rel="noopener">NCBI (2016)</a></li>
-                                    <li><a href="https://doi.org/10.1016/j.xgen.2022.100123" target="_blank" rel="noopener">Genomics (2022)</a></li>
-                                </ul>
-                            </div>
+                            <p>Research & Development in Bioinformatics. Management of genomic sequencing projects (TARA Oceans, Pea genome). Co-developed MaGuS tool for genome assembly quality assessment. Genome assembly and decontamination using Illumina and Nanopore data.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="publications" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Scientific Publications</h2>
+                <div class="publications-list">
+                    <div class="publication-item">
+                        <h3><a href="https://doi.org/10.1016/j.xgen.2022.100123" target="_blank" rel="noopener">A reference genome for pea provides insight into legume genome evolution</a></h3>
+                        <p class="publication-journal">Cell Genomics, 2022</p>
+                        <p class="publication-desc">Contribution to the pea genome sequencing project at Genoscope.</p>
+                    </div>
+                    <div class="publication-item">
+                        <h3><a href="https://doi.org/10.3389/fimmu.2022.841723" target="_blank" rel="noopener">Local Innate Markers and Vaginal Microbiota Composition Are Influenced by Hormonal Cycle Phases</a></h3>
+                        <p class="publication-journal">Frontiers in Immunology, 2022</p>
+                        <p class="publication-desc">Collaboration with CEA on microbiome and RNAseq data analysis.</p>
+                    </div>
+                    <div class="publication-item">
+                        <h3><a href="https://www.ncbi.nlm.nih.gov/pubmed/28369459" target="_blank" rel="noopener">De novo assembly and annotation of three Leptosphaeria genomes using Oxford Nanopore MinION sequencing</a></h3>
+                        <p class="publication-journal">Scientific Reports, 2017</p>
+                        <p class="publication-desc">Genome assembly using long-read Nanopore technology.</p>
+                    </div>
+                    <div class="publication-item">
+                        <h3><a href="http://www.ncbi.nlm.nih.gov/pubmed/26936254" target="_blank" rel="noopener">MaGuS: a tool for quality assessment and scaffolding of genome assemblies with Whole Genome Profiling™ Data</a></h3>
+                        <p class="publication-journal">BMC Bioinformatics, 2016</p>
+                        <p class="publication-desc">Co-developed tool to assess and improve genome assembly quality using physical/genetic maps.</p>
+                    </div>
+                    <div class="publication-item">
+                        <h3><a href="https://www.ncbi.nlm.nih.gov/pubmed/29618461" target="_blank" rel="noopener">De novo assembly and population genomic survey of natural yeast isolates with the Oxford Nanopore MinION sequencer</a></h3>
+                        <p class="publication-journal">GigaScience, 2018</p>
+                        <p class="publication-desc">Assembly of Saccharomyces cerevisiae S288C strain genomes from Nanopore data.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="hobbies" class="section">
             <div class="section-container">
                 <h2 class="section-title">Hobbies & Interests</h2>
