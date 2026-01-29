@@ -58,6 +58,11 @@ html {
     color: var(--primary-color);
 }
 
+.nav-logo {
+    height: 150px;
+    width: auto;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
