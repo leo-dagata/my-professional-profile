@@ -12,6 +12,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
             });
         }
     });
+});
 
 // Add active state to navigation on scroll
 window.addEventListener('scroll', () => {
@@ -64,4 +65,21 @@ document.querySelectorAll('section:not(.hero-section)').forEach(section => {
     section.style.transform = 'translateY(30px)';
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(section);
+});
+
+// Dark mode toggle
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Check for saved theme preference or default to light
+const savedTheme = localStorage.getItem('theme') || 'light';
+if (savedTheme === 'dark') {
+    body.classList.add('dark-mode');
+    themeToggle.checked = true;
+}
+
+themeToggle.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');
+    const isDark = body.classList.contains('dark-mode');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
